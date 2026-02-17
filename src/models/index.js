@@ -1,6 +1,6 @@
 import { sequelize } from '../../configs/database.js'
 import { initRoleModel } from '../roles/role.model.js'
-import { initUserModel } from '../users/user.model.js'
+import { initUserModel } from '../users/users.model.js'
 
 // Inicializamos modelos
 const Role = initRoleModel(sequelize)

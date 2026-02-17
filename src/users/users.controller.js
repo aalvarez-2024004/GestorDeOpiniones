@@ -1,4 +1,4 @@
-import { changePassword } from './user.service.js'
+import { changePassword } from './users.service.js'
 
 export const updateMyPassword = async (req, res) => {
   try {

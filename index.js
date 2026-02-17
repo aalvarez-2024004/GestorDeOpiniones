@@ -10,7 +10,7 @@ import { seedAdminGeneral } from './src/seed/admin.seed.js'
 const app = createApp()
 
 const startServer = async () => {
-  await dbConnection
+  await dbConnection()
   await seedRoles()
   await seedAdminGeneral()
 

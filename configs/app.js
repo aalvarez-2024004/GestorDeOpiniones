@@ -4,7 +4,7 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 
 import authRoutes from '../src/auth/auth.routes.js'
-import userRoutes from '../src/users/user.routes.js'
+import userRoutes from '../src/users/users.routes.js'
 
 
 export const createApp = () => {

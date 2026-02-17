@@ -15,7 +15,7 @@ export const registerUser = async (data) => {
   if (exists) throw new Error('El correo ya está registrado')
 
   const clientRole = await Role.findOne({
-    where: { name: 'CLIENTE' }
+    where: { name: 'USUARIO' }
   })
 
   const hashedPassword = await hashPassword(password)

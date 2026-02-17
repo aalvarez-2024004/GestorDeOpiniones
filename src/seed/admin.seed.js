@@ -21,6 +21,6 @@ export const seedAdminGeneral = async () => {
       isActive: true
     })
 
-    console.log('ADMIN_GENERAL se ha creado automáticamente')
+    console.log('ADMIN_GENERAL se ha creado automáticamente ;D')
   }
 }

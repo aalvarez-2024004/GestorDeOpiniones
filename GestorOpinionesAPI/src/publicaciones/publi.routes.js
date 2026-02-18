@@ -3,8 +3,8 @@ import {
   createPost,
   updatePost,
   deletePost
-} from './post.controller.js';
-import { verifyToken } from '../../middlewares/auth.middleware.js';
+} from './publi.controller.js';
+import { verifyToken } from '../../middlewares/user.comprobated.js';
 
 const router = Router();
 

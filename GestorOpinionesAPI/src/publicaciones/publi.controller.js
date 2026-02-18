@@ -8,8 +8,7 @@ export const createPost = async (req, res) => {
       titulo,
       categoria,
       contenido,
-      autorId: req.user.id,
-      autorEmail: req.user.email
+      autorId: req.user.uid
     });
 
     return res.status(201).json({
@@ -37,10 +36,10 @@ export const updatePost = async (req, res) => {
       });
     }
 
-    if (post.authorId !== req.user.id) {
+    if (post.autorId !== req.user.uid) {
       return res.status(403).json({
         success: false,
-        message: 'Unicamente puedes unicar los posts hechos por ti :p'
+        message: 'Unicamente puedes editar los posts hechos por ti :p'
       });
     }
 
@@ -76,9 +75,7 @@ export const deletePost = async (req, res) => {
       });
     }
 
-    if (
-      post.authorId !== req.user.id &&
-      req.user.role !== 'ADMIN'
+    if (post.autorId !== req.user.uid
     ) {
       return res.status(403).json({
         success: false,

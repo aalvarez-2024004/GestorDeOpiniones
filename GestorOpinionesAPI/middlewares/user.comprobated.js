@@ -7,7 +7,7 @@ export const verifyToken = (req, res, next) => {
     if (!header || !header.startsWith('Bearer ')) {
       return res.status(401).json({
         success: false,
-        message: 'Token not provided'
+        message: 'No has proporcionado un token'
       });
     }
 
@@ -15,18 +15,14 @@ export const verifyToken = (req, res, next) => {
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    req.user = decoded; 
-    // Aquí tendrás:
-    // req.user.id
-    // req.user.email
-    // req.user.role
+    req.user = decoded;
 
     next();
 
   } catch (error) {
     return res.status(401).json({
       success: false,
-      message: 'Invalid or expired token'
+      message: 'Token invalido o caducado ;C'
     });
   }
 };

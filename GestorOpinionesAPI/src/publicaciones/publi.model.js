@@ -16,10 +16,6 @@ const postSchema = new Schema({
   autorId: {
     type: String,
     required: true
-  },
-  autorEmail: {
-    type: String,
-    required: true
   }
 }, {
   timestamps: true

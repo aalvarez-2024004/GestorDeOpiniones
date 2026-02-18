@@ -1,23 +1,23 @@
 import { Schema, model } from 'mongoose';
 
 const postSchema = new Schema({
-  title: {
+  titulo: {
     type: String,
     required: [true, 'ES NECESARIO UN TITULO =8']
   },
-  category: {
+  categoria: {
     type: String,
     required: [true, 'INGRESA UN CATEGORIA ;D']
   },
-  content: {
+  contenido: {
     type: String,
     required: [true, 'Tu post no puede ir vacio ;C']
   },
-  authorId: {
+  autorId: {
     type: String,
     required: true
   },
-  authorEmail: {
+  autorEmail: {
     type: String,
     required: true
   }

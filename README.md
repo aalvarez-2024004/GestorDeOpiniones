@@ -10,6 +10,8 @@
 	Terminal 1 - Para la autenticacion 
 	Terminal 2 - Para probar el sistema gestor de opiniones
 
+8vo paso - Para probar los endpoints se recomienda ir a PostMan e importar las peticiones por medio de import -- IMPORTAR EL ARCHIVO LLAMADO Gestor de opiniones.postman_collection ubicado en la carpeta ArchivoJSONpostMan
+
 # INTRUCCIONES AUTENTICACION DE USUARIO
 1er paso - Ubicarse dentro de la terminal 1 y situarse en la carpeta AuthGestOpi por medio del siguiente comando : cd AuthGestOpi
 2do paso - Estando ahi, realizar el comando: pnpm install nodemon

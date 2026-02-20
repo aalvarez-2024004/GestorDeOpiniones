@@ -21,8 +21,10 @@ ANTES DE CONTINUAR, IMPORTANTE:
 
 3er paso - En pgAdmin, debe crear una base de datos llamada GestOpiAuth con owner root
 4to paso - Verificar en docker-desktop que el contenedor se haya inicializado correctamente y este activo
-5to paso - Realizar el siguiente comando para correr el programa: pnpm run dev
-6to paso - Probar las peticiones en PostMan del siguiente link: 
+5to paso - Ejecutar en la terminal 1 el siguiente comando : pnpm add -D cross-env
+7mo paso - Ejecutar en la terminal 1 el siguiente comando : docker compose up -d
+8vo paso - Realizar el siguiente comando para correr el programa: pnpm run dev
+7mo paso - Probar las peticiones en PostMan del siguiente link: 
 https://www.postman.com/aalvarez-2024004-2419738/workspace/gestoropiniones-2024004
 
 Forma de probar las peticiones:
@@ -35,12 +37,13 @@ Forma de probar las peticiones:
 # INTRUCCIONES GESTOR DE OPINIONES
 1er paso - Ubicarse dentro de la terminal 2 y situarse en la carpeta GestorOpinionesAPI por medio del siguiente comando : cd GestorOpinionesAPI
 2do paso - Estando ahi, realizar el comando: pnpm install nodemon
+3er paso - Luego de ello realizar: pnpm run dev
 
 ANTES DE CONTINUAR, IMPORTANTE: 
 	ES IMPORTANTE QUE TENGA ABIERTO mongoDB para verificar que la conexion fue exitosa y verificar la agregacion de publicaciones
 
-3er paso - En mongoDB dar click en CONNECT y verificar que haya una base de datos llamada "gestopiniones"
-4to paso - Probar las peticiones en PostMan del siguiente link: 
+4to paso - En mongoDB dar click en CONNECT y verificar que haya una base de datos llamada "gestopiniones"
+5to paso - Probar las peticiones en PostMan del siguiente link: 
 https://www.postman.com/aalvarez-2024004-2419738/workspace/gestoropiniones-2024004
 
 Forma de probar las peticiones:
